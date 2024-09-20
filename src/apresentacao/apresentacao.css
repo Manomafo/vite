@@ -1,13 +1,62 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wgth@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
+  line-height: 1.5;
   font-family: "Poppins", sans-serif;
 }
+/* header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.logo__titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+
+.titulo__pagina{
+    text-decoration: none;
+    color: #8e5dbbbb;
+    font-size: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    width: 60px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction:row;
+    margin:10px 30px;
+    gap: 20vh;
+    list-style-type: none; /* Remove os marcadores (bolinhas, etc.) */
+/* } */
+
+/* nav ul a{
+    font-size: 25px;
+    padding: 5px;
+    background-color: #8e5dbbbb;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #fff;
+} */
 
 header {
   display: flex;
@@ -70,12 +119,12 @@ nav button {
 
 .entrar,
 .cadastrar {
-  background-color: #000;
+  background-color: #222;
 }
 
 .entrar:hover,
 .cadastrar:hover {
-  background-color: #575757;
+  background-color: #57449a;
 }
 
 .calculadora:hover {
@@ -131,6 +180,107 @@ section {
   max-width: 100%;
   min-height: 50px;
   object-fit: contain;
+}
+
+/* Os dois H1 da pagina */
+
+.chamada {
+  text-align: center;
+  color: #57449a;
+  font-size: 50px;
+  margin:50px;
+  border-bottom: 1px solid #575757;
+}
+
+/* ////////// seção de informações ////////////////////////////////////////// */
+
+.informacao__acoes {
+  width: 100%;
+  /* padding: 20px; */
+  background-image: url('./img/Orange\ and\ White\ Simple\ Business\ Webinar\ with\ Dynamic\ Frame\ LinkedIn\ Post.png');
+}
+
+.acoes {
+  background-color: orange;
+  /* color: #fff; */
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* transition: 0.5s; */
+  width:25%;
+  border-bottom-right-radius: 70px;
+  border-top-right-radius: 70px;
+}
+
+.acoes:hover{
+  /* background-color: rgb(247, 191, 87); */
+  width: 50%;
+}
+
+.acoes p {
+  margin-left: 20px;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+.acoes h3 {
+  margin-left: 20px;
+}
+
+
+.acoes:hover p{
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+
+.acoes img {
+  width: 100px; /* Tamanho pequeno da imagem */
+  border-radius: 50px;
+}
+
+
+
+
+/* Estilo seção de imagens */
+
+.div__img__1{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px;
+  background-color: #eceaea;
+  border-radius: 20px;
+}
+
+.div__img__1 img {
+  width: 50%;  
+  border: 1px solid #222;
+}
+
+.div__img__2{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:50px;
+  background-color: #eceaea;
+  border-radius: 20px;
+}
+
+.div__img__2 strong, .div__img__1 strong{
+  color:#57449a
+}
+
+.div__img__2 img {
+  width: 50%;  
+}
+
+.lorem1, .lorem2 {
+  margin: 50px;
 }
 
 /* Estilo para o conteúdo da seção */
